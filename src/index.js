@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Heyworld from './components/first.jsx'
 
 
 ReactDOM.render(
-  <h1 class="">hellooooooo brasilll</h1>,
+ 
+  <Heyworld></Heyworld>,
   document.getElementById('root')
 );
 
