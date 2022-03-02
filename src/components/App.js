@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import CountButton from "./CountButton/CountButton";
-import SearchBar from "./SearchButton/SearchBar";
-import Button from "./Button/Button";
+import SearchBar from "./SearchBar";
+import Button from "./Button";
 
 const App = () => {
     const [productsState, setProductsState] = useState([]);
@@ -14,7 +13,8 @@ const App = () => {
                     return {
                         id: product.id,
                         title: product.title,
-                        price: product.price
+                        price: product.price,
+                        image: product.image,
                     };
                 });
                 setProductsState(newProductsState);
@@ -26,8 +26,6 @@ const App = () => {
     return (
         <div className="flex flex-col justify-center py-48 items-center text-xl">
             {hasProducts ? <SearchBar products={productsState} /> : "Loading"}
-            {<CountButton incrementBy={2}/> }
-            {<CountButton incrementBy={4}/>}
   
             <Button>helloooMybutton</Button>
             <Button>vemm2022</Button>

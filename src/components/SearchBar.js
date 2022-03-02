@@ -13,7 +13,7 @@ const SearchBar = (props) => {
     const shouldDisplayButton = searchValue.length > 0
 
     const filteredProducts = props.products.filter((product)=> {
-        return product.title.includes(searchValue)
+        return  product.title.includes(searchValue)
     })
 
     return ( 
@@ -23,7 +23,7 @@ const SearchBar = (props) => {
             {/* //if is true display button if is false not show */}
 
             {filteredProducts.map((product)=> {
-                return <div className = " w-full flex flex-wrap justify-center py-12 mx-3 text-red-500" key={product.id}>{product.title}</div>
+                return <div className = " w-full flex flex-wrap justify-center py-12 mx-3 text-red-500" key={product.id}>{product.title},{product.price},{product.image}</div>
             })}
         </div>
     )
