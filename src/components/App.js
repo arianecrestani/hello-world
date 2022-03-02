@@ -30,7 +30,9 @@ const App = () => {
       <CountButton incrementBy={4}/> */}
             {/* <Button buttonText="myButton"/>
       <Button buttonText="button2"/> */}
-            <Button buttonText="myButton" />
+            <Button>helloooMybutton</Button>
+            <Button>vemm2022</Button>
+            <Button>presstest</Button>
         </div>
     );
 };
