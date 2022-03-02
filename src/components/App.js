@@ -26,10 +26,9 @@ const App = () => {
     return (
         <div className="flex flex-col justify-center py-48 items-center text-xl">
             {hasProducts ? <SearchBar products={productsState} /> : "Loading"}
-            {/* <CountButton incrementBy={2}/>
-      <CountButton incrementBy={4}/> */}
-            {/* <Button buttonText="myButton"/>
-      <Button buttonText="button2"/> */}
+            {<CountButton incrementBy={2}/> }
+            {<CountButton incrementBy={4}/>}
+  
             <Button>helloooMybutton</Button>
             <Button>vemm2022</Button>
             <Button>presstest</Button>
