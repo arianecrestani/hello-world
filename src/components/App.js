@@ -14,7 +14,7 @@ const App = () => {
                         id: product.id,
                         title: product.title,
                         price: product.price,
-                        image: product.image,
+                        image: product.image
                     };
                 });
                 setProductsState(newProductsState);
