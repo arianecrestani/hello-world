@@ -14,7 +14,7 @@ const App = () => {
                         id: product.id,
                         title: product.title,
                         price: product.price,
-                        image: product.image
+                        image: product.image,
                     };
                 });
                 setProductsState(newProductsState);
@@ -24,7 +24,7 @@ const App = () => {
     const hasProducts = productsState.length > 0;
 
     return (
-        <div className="flex flex-col justify-center py-48 items-center text-xl">
+        <div className="">
             {hasProducts ? <SearchBar products={productsState} /> : "Loading"}
   
             <Button>helloooMybutton</Button>

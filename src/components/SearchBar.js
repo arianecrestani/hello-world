@@ -25,7 +25,7 @@ const SearchBar = (props) => {
             />
             {shouldDisplayButton && (
                 <button
-                    className="flex justify-center bg-blue-100 w-20 p-2 text-xl text-white uppercase rounded-md"
+                    className=""
                     onClick={handleClearClick}
                 >
                     clear
@@ -34,15 +34,19 @@ const SearchBar = (props) => {
             {/* //if is true display button if is false not show */}
 
             {filteredProducts.map((product) => {
+                
                 return (
-                    <div
-                        className=" w-full flex flex-wrap justify-center py-12 mx-3 text-red-500"
-                        key={product.id}
-                    >
-                        {product.title},
-                        <div>{product.price}</div>
-                    <img src={product.image}></img>    
+                    <div className="flex p-8 flex-wrap py-8 w-72   text-center">
+                        <div>
+                        <div className="">
+                            {product.title},
+                            </div>  
+                            <div>{product.price}</div>
+                            <img className=" w-20" src={product.image}></img>
+                           
+                        </div>
                     </div>
+                
 
                 );
             })}
